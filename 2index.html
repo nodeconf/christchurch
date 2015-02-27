@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NodeConf ONE-SHOT Christchurch, New Zealand - NZ's NodeJS Conference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  maximum-scale=1.0, user-scalable=0">
+    <meta name="author" content="Mikeal Rogers">
+
+    <link rel="image_src" href="logo.png" / >
+
+    <meta name="description" content="A world-class conference with a core of international speakers focused on Node.js right here in Christchurch, New Zealand" />
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- place this in your head tag -->
+    <script src='https://js.tito.io/v1' async></script>
+    <link rel="stylesheet" type="text/css" href='https://css.tito.io/v1' />
+
+    <style>
+    /* hexagons */
+    * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .hexagon3 {
+      /*this smushes a square into a 60deg/120deg rhombus*/
+      position: relative;
+      width: 150px;
+      height: 86.60254px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+      border-left: solid 3px white;
+      border-right: solid 3px white;
+      /*cover up the -moz-box shadows */
+
+      filter: grayscale(100%); /* Current draft standard */
+      -webkit-filter: grayscale(100%); /* New WebKit */
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */
+      filter: gray; /* IE */
+      -webkit-filter: grayscale(1); /* Old WebKit */
+
+    }
+    .hexagon3 .hex1,
+    .hexagon3 .hex2 {
+      position: absolute;
+      overflow: hidden;
+      width: 106.06602px;
+      height: 106.06602px;
+      left: 19.65064px;
+      /*for some reason this 1px correction is needed */
+      background: inherit;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+      -moz-transform: scaleY(0.57735) rotate(-45deg);
+      -ms-transform: scaleY(0.57735) rotate(-45deg);
+      -webkit-transform: scaleY(0.57735) rotate(-45deg);
+      transform: scaleY(0.57735) rotate(-45deg);
+    }
+    .hexagon3 .hex1:after,
+    .hexagon3 .hex2:after {
+      /*counter rotate and un-scale the bg image*/
+      content: "";
+      position: absolute;
+      left: -22.65064px;
+      /*same correction as up above */
+      width: 150px;
+      height: 106.06602px;
+      top: 0;
+      background: inherit;
+      -moz-transform: rotate(45deg) scaleY(1.73205);
+      -ms-transform: rotate(45deg) scaleY(1.73205);
+      -webkit-transform: rotate(45deg) scaleY(1.73205);
+      transform: rotate(45deg) scaleY(1.73205);
+    }
+    .hexagon3 .hex1 {
+      top: -53.03301px;
+      border-top: solid 5.19615px white;
+      border-right: solid 5.19615px white;
+    }
+    .hexagon3 .hex1:after {
+      background-position: center 17%;
+      margin-top: -5.19615px;
+    }
+    .hexagon3 .hex2 {
+      bottom: -53.03301px;
+      border-left: solid 5.19615px white;
+      border-bottom: solid 5.19615px white;
+    }
+    .hexagon3 .hex2:after {
+      background-position: center 83%;
+      margin-left: -4.19615px;
+      /*that pesky single pixel correction again*/
+    }
+    .hexagon3:after {
+      content: "";
+      position: absolute;
+      top: 2.12132px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 82.3599px;
+      background: inherit;
+    }
+
+    </style>
+
+
+    <style>
+    div.header {
+      text-align:center;
+    }
+    img.logo {
+      width:80%;
+    }
+    div.info {
+      width:100%;
+      font-family:Reenie Beanie;
+      font-size:200%;
+      text-align:center;
+      color:#333333;
+    }
+    div#main-grid {
+      margin-top:20px;
+    }
+    body {
+      color:#333333;
+    }
+    h2 {
+      font-family:Lato;
+      font-weight:normal;
+      color:#333333;
+    }
+    h3 {
+      font-family:Lato;
+      font-weight:normal;
+      color:#333333;
+    }
+    p {
+      font-family:Lato;
+      /*font-size:150%;*/
+    }
+
+    div.conf-info {
+      margin-left:10%;
+      margin-right:10%;
+      padding: 0 0 0 0;
+      text-align:left;
+    }
+    div.speaker {
+      width:100%;
+      clear:both;
+    }
+
+    img.spns {
+      max-width:100%;
+    }
+
+    div#justin-searls {
+      background: url('https://pbs.twimg.com/profile_images/2360535353/20120630-face_200x200.jpg');
+      background-size: 236.60254px auto;
+      background-position: center center;
+    }
+
+    div#laurie-voss {
+      background: url('https://avatars0.githubusercontent.com/u/185893?v=3&s=250');
+      background-size: 236.60254px auto;
+      background-position: center center;
+    }
+
+    div#aria-stewart {
+      background: url('https://avatars1.githubusercontent.com/u/2876?v=3&s=250');
+      background-size: 236.60254px auto;
+      background-position: center center;
+    }
+
+    div#rod-vagg {
+      background: url('rvagg.jpg');
+      background-size: 236.60254px auto;
+      background-position: center center;
+    }
+
+    div#james-halliday {
+      background: url('https://avatars1.githubusercontent.com/u/12631?v=3&s=250');
+      background-size: 236.60254px auto;
+      background-position: center center;
+    }
+
+    div#tim-oxley {
+      background: url('https://avatars2.githubusercontent.com/u/43438?v=3&s=250');
+      background-size: 236.60254px auto;
+      background-position: center center;
+    }
+
+    div#dominic-tarr {
+      background-image: url('https://avatars1.githubusercontent.com/u/259374?v=3&s=200');
+      background-size: 200.60254px auto;
+      background-position: center center;
+    }
+    div#dominic-tarr .hex1 {
+      background-image: url('https://avatars1.githubusercontent.com/u/259374?v=3&s=200');
+      background-position: -22px 0px;
+      background-size: 190.60254px auto;
+    }
+    div#dominic-tarr .hex1:after {
+      background-position: -22px 0px;
+      margin-top: -5.19615px;
+    }
+
+    div#dominic-tarr .hex2 {}
+
+    div#sarah-hui {
+      background: url('sarah.jpg');
+      background-size: 236.60254px auto;
+      background-position: center center;
+    }
+
+    p.spns {
+      text-align:center;
+    }
+    img.spns {
+      max-height:50px;
+      text-align:center;
+    }
+    </style>
+
+  </head>
+  <body>
+    <div class="pure-g" id="main-grid">
+      <div class="pure-u-1-3" style="text-align:center;">
+        <img class="logo" src="logo.png"></img>
+
+        <div class="conf-info">
+          <h2 style="text-align:center;">Sat 28th March, 2015</h3>
+
+          <h3 style="text-align:center;">Rydges Latimer<br>Christchurch, New Zealand<br>Organized by <a href="https://www.mediasuite.co.nz" style="text-decoration: none; text-color: #333333;">Media Suite <img class="spns" style="vertical-align: middle; " src="https://avatars0.githubusercontent.com/u/4219296?v=3&s=200"></img></a></h3>
+
+          <p>The event starts at ten in the morning and we'll have you out by six.</p>
+
+          <p>Tickets $88 (New Zealand dollars), first batch of 50 tickets goes on sale February 2nd at 1pm NZDST (UTC+13).
+
+          <!-- Place this where you want the widget to appear -->
+          <tito-widget event="oneshotchch/2015"></tito-widget>
+
+
+          </br></br>
+
+          Buffet lunch and afternoon tea provided.</p>
+
+          <p><a href="https://twitter.com/oneshotchch">Follow us on twitter</a> for announcements.</p>
+
+          <p><a href="mailto:digitalsadhu@gmail.com?subject=NodeConf%20ONE-SHOT%20Sponsorship">Interested in sponsoring?</a></p>
+
+          <p><a href="https://github.com/oneshot/christchurch">Interested in speaking?</a></p>
+
+          <p><a href="conduct.html">ONE-SHOT is dedicated to a harrassment free environment.</a></p>
+
+          <p>Track our <a href="http://lanyrd.com/2015/oneshotchch">lanyrd page</a></p>
+        </div>
+
+      </div>
+      <div class="pure-u-2-3">
+        <p>A world-class conference with a core of international speakers focused on Node.js</p>
+        <h1>NodeConf Christchuch - Confirmed Speakers</h1>
+
+        <div class="speaker">
+          <div class="hexagon3" id="justin-searls" style="float:left;margin-right:20px;">
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+          </div>
+          <div>
+            <h2>Justin Searls</h2>
+            <h3>Talk: The social coding contract</h3>
+            <p>Justin Searls has two professional passions: writing great software and sharing what he’s learned to help others write even greater software. He helped start a software agency called <a href="http://testdouble.com/">Test Double</a>, whose crack team of double agents solve complex problems with clean and simple solutions.</p>
+            <p>
+              Twitter: <a href="https://twitter.com/searls">@searls</a><br>
+              Github: <a href="https://github.com/searls">searls</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <div class="hexagon3" id="laurie-voss" style="float:left;margin-right:20px;">
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+          </div>
+          <div>
+            <h2>Laurie Voss</h2>
+            <h3>Talk: How to publish a module people will really use</h3>
+            <p>Laurie has been a web developer for 18 years and the CTO of <a href="https://www.npmjs.com/">npm</a> for 1. He cares about making the web bigger, better and more accessible for everyone, and thinks Node is an awesome way to get there.</p>
+            <p>
+              Twitter: <a href="https://twitter.com/seldo">@seldo</a><br>
+              Github: <a href="https://github.com/seldo">seldo</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <div class="hexagon3" id="aria-stewart" style="float:left;margin-right:20px;">
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+          </div>
+          <div>
+            <h2>Aria Stewart</h2>
+            <h3>Talk: How to read code</h3>
+            <p>Aria Stewart is a tentacle wrangler with the Kraken.js team at <a href="https://www.paypal.com">PayPal</a>, working on the open source web framework and trying to keep a multi-armed monster of requirements and interests from wreaking havoc on applications. </p>
+            <p>
+              Twitter: <a href="https://twitter.com/aredridel">@aredridel</a><br>
+              Github: <a href="https://github.com/aredridel">aredridel</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <div class="hexagon3" id="rod-vagg" style="float:left;margin-right:20px;">
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+          </div>
+          <div>
+            <h2>Rod Vagg</h2>
+            <h3>Talk: The future of node</h3>
+            <p>Rod Vagg is Director of Engineering with <a href="https://nodesource.com/">NodeSource</a>. Rod is known for his work across the Node.js ecosystem, including in the Node.js databases community and for the creation of key NodeSchool workshoppers. He is passionate about Node.js and its future as a wide-spread, general-purpose and enterprise programming platform. This passion has lead to his involvement in <a href="https://iojs.org/">io.js</a> as a way to reinvigorate the core of Node.js and bring it in alignment with the future of JavaScript.</p>
+            <p style="padding-left:170px;">
+              Twitter: <a href="https://twitter.com/rvagg">@rvagg</a><br>
+              Github: <a href="https://github.com/rvagg">rvagg</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <div class="hexagon3" id="james-halliday" style="float:left;margin-right:20px;">
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+          </div>
+          <div>
+            <h2>James “substack” Halliday</h2>
+            <h3>Talk: Webapps of the future</h3>
+            <p>open source librarian, unix philosopher, tiny module author</p>
+            <p>
+              Website: <a href="http://substack.net/">substack.net</a><br>
+              Twitter: <a href="https://twitter.com/substack">@substack</a><br>
+              Github: <a href="https://github.com/substack">substack</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <div class="hexagon3" id="tim-oxley" style="float:left;margin-right:20px;">
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+          </div>
+          <div>
+            <h2>Tim Oxley</h2>
+            <h3>Talk: Practical ES6</h3>
+            <p>Tim Oxley is the founder and organiser of the <a href="http://campjs.com/">CampJS conference</a> in Australia, Singapore NodeSchool events and the <a href="http://www.meetup.com/Singapore-JS/">SingaporeJS meetup group</a>. Tim is a <a href="http://nodeup.com/">NodeUp</a> co-host and a developer with <a href="https://nodesource.com/">NodeSource</a>.</p>
+            <p>
+              Twitter: <a href="https://twitter.com/secoif">@secoif</a><br>
+              Github: <a href="https://github.com/timoxley">timoxley</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <div class="hexagon3" id="dominic-tarr" style="float:left;margin-right:20px;">
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+          </div>
+          <div>
+            <h2>Dominic Tarr</h2>
+            <h3>Talk: A cryptographically secure decentralised todo list</h3>
+            <p>Dominic has spent several years studying databases and distributed
+            systems, and is now applying that learning towards cryptographically
+            secure, replication-first databases</p>
+            <p>
+              Website: <a href="http://dominictarr.com/">dominictarr.com</a><br>
+              Twitter: <a href="https://twitter.com/dominictarr">@dominictarr</a><br>
+              Github: <a href="https://github.com/dominictarr">dominictarr</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <div class="hexagon3" id="sarah-hui" style="float:left;margin-right:20px;">
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+          </div>
+          <div>
+            <h2>Sarah Hui</h2>
+            <h3>Talk: Straight up nodebots</h3>
+            <p>Sarah is lead front end engineer at <a href="http://www.vendhq.com/careers">Vend</a>’s HQ in Auckland. She’s been part of the rocketship since way back, building their famed point of sale, bringing together their rapidly expanding engineering &amp; product team, and admiring moustaches. As a lover of JavaScript and beautiful things, she spreads the good word of technology &amp; development, has been known to tinker with nodebots, and has recently got a bluetooth speaker that has truly impacted her life. Code life, thug life.</p>
+            <p>
+              Twitter: <a href="https://twitter.com/sehsarah">@sehsarah</a><br>
+              Github: <a href="https://github.com/sehsarah">sehsarah</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <div class="hexagon3" id="soon" style="float:left;margin-right:20px;">
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+          </div>
+          <div>
+            <h2></br></h2>
+            <h3>We're still looking for you</h3>
+            <p>Interested in speaking? We are accepting and considering talk proposals. Read and submit a CFP on our <a href="https://github.com/oneshot/christchurch">GitHub repo</a>.</p>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <div class="hexagon3" id="soon" style="float:left;margin-right:20px;">
+            <div class="hex1"></div>
+            <div class="hex2"></div>
+          </div>
+          <div>
+            <h2></br></h2>
+            <h3>We're still looking for you</h3>
+            <p>Interested in speaking? We are accepting and considering talk proposals. Read and submit a CFP on our <a href="https://github.com/oneshot/christchurch">GitHub repo</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-1601711-9', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
