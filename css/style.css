@@ -155,7 +155,7 @@ div#aria-stewart {
 }
 
 div#rod-vagg {
-  background: url('rvagg.jpg');
+  background: url('/images/rvagg.jpg');
   background-size: 236.60254px auto;
   background-position: center center;
 }
@@ -206,11 +206,11 @@ div#laurie-voss {      background: url('https://avatars0.githubusercontent.com/u
       background-size: 236.60254px auto;
       background-position: center center;
 }
-div#rod-vagg {      background: url('images/rvagg.jpg');
+div#rod-vagg {      background: url('/images/rvagg.jpg');
       background-size: 236.60254px auto;
       background-position: center center;
 }
-div#sarah-hui {      background: url('images/sarah.jpg');
+div#sarah-hui {      background: url('/images/sarah.jpg');
       background-size: 236.60254px auto;
       background-position: center center;
 }
@@ -225,7 +225,7 @@ div#jonathan-barnett {
     }
 
 div#sarah-hui {
-  background: url('sarah.jpg');
+  background: url('/images/sarah.jpg');
   background-size: 236.60254px auto;
   background-position: center center;
 }
