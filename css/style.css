@@ -259,7 +259,29 @@ div.speaker {
 	height: 610px;
 }
 
+.sponsor-link {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  transition: all 1s ease;
+  padding-bottom:4px;
+}
 
+.sponsor-link.active {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.sponsor-blurb {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.sponsor-blurb.active {
+  opacity: 1;
+}
+
+.sponsor-blurb a {
+  width: initial !important;
+  margin: initial !important;
+}
 
 /*  MAIN LAYOUT	============================================================================= */
 
