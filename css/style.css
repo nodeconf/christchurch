@@ -259,26 +259,26 @@ div.speaker {
 	height: 610px;
 }
 
-.sponsor-link {
+.sp0nsor-link {
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   transition: all 1s ease;
   padding-bottom:4px;
 }
 
-.sponsor-link.active {
+.sp0nsor-link.active {
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
-.sponsor-blurb {
+.sp0nsor-blurb {
   opacity: 0;
   transition: all 1s ease;
 }
 
-.sponsor-blurb.active {
+.sp0nsor-blurb.active {
   opacity: 1;
 }
 
-.sponsor-blurb a {
+.sp0nsor-blurb a {
   width: initial !important;
   margin: initial !important;
 }
@@ -388,7 +388,7 @@ color:#ee3344;
 	width: 30%;
 	display: inline-block;
 }
-#sponsors a {
+#sp0nsors a {
   width: 150px;
   display: inline-block;
   margin: 20px 30px;
@@ -479,7 +479,7 @@ div.speaker {
   height: initial;
   margin-bottom: 120px;
 }
-#sponsors a {
+#sp0nsors a {
   width: 100%;
   display: block;
   margin: 50px 0;
